@@ -1,0 +1,95 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Lilita One', cursive;
+    background-color: #fff0d4;
+}
+.bg {
+    background-color: #fff0d4;
+    height: 750px;
+    width: 1200px;
+}
+table {
+    display: inline-block;
+    font-size: 18px;
+}
+
+#apppage .view {
+    /* background-image: url("https://mdbootstrap.com/img/Photos/Others/architecture.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh; */
+    background-color: #000000;
+}
+
+.bg-color {
+    color: #000000;
+}
+
+.bar-col {
+    background-color: #b6c471;
+}
+
+.mx-2 {
+    background-color: #f68c64;
+    border-color: #f68c64;
+}
+
+.gaegu {
+    font-family: 'Gaegu', cursive;
+    font-weight: 1000;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.btn {
+    font-family: 'Lilita One';
+    color: red;
+    font-size: 15px;
+    border-radius: 2cm;
+    width: 4cm;
+    height: 1.5cm;
+    border-color: #ffcc00;
+    background-color: #ffcc00;
+    margin-left: 2cm;
+}

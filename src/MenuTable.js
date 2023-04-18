@@ -65,24 +65,24 @@ const MenuTable = () => {
   };
 
   return (
-    <div>
+    <div className="bg">
       <h1>Menus</h1>
       <table>
         <thead>
-          <tr>
-            <th>Item ID</th>
-            <th>Menu Name</th>
-            <th>Menu Description</th>
-            <th>Order Amount</th>
+          <tr className="bar-col">
+            <th scope="col">Item ID</th>
+            <th scope="col">Menu Name</th>
+            <th scope="col">Menu Description</th>
+            <th scope="col">Order Amount</th>
           </tr>
         </thead>
         <tbody>
           {menus.map((menu) => (
             <tr key={menu.item_id}>
-              <td>{menu.item_id}</td>
-              <td>{menu.menu_name}</td>
-              <td>{menu.menu_description}</td>
-              <td>{menu.price}</td>
+              <td className="gaegu">{menu.item_id}</td>
+              <td className="gaegu">{menu.menu_name}</td>
+              <td className="gaegu">{menu.menu_description}</td>
+              <td className="gaegu">{menu.price}</td>
               <td>
                 <input
                   type="number"
@@ -96,8 +96,9 @@ const MenuTable = () => {
           ))}
         </tbody>
       </table>
-      <button onClick={handleOrderSubmit}>Submit Order</button>
-      <button onClick={()=>{window.location.href = "/"}}>Back</button>
+      <br></br>
+      <button className="btn" onClick={handleOrderSubmit}>Submit Order</button>
+      <button className="btn" onClick={()=>{window.location.href = "/"}}>Back</button>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import RestaurantTable from './RestaurantTable'; // Update the file path to match your project structure
-
+import "./res.css"
 const AllRestaurants = () => {
 
   const [allRestaurants, setAllRestaurants] = useState([]);
@@ -42,32 +42,30 @@ const AllRestaurants = () => {
   }, []);
 
   return (
-    <div>
+    <div >
       <h1>Restaurant Table</h1>
       <RestaurantTable all_restaurants={allRestaurants} />
       <div>
       <h1>Orders Table</h1>
       <table>
         <thead>
-          <tr>
-            <th>Order ID</th>
-            <th>User ID</th>
-            <th>Restaurant ID</th>
-            <th>Order Date</th>
-            <th>Total Price</th>
-            <th>Payment Status</th>
-            <th>Delivery Status</th>
+          <tr className='bar-col'>
+            <th scope="col">Order ID</th>
+            <th scope="col">Restaurant ID</th>
+            <th scope="col">Order Date</th>
+            <th scope="col">Total Price</th>
+            <th scope="col">Payment Status</th>
+            <th scope="col">Delivery Status</th>
           </tr>
         </thead>
         <tbody>
           {allOrders.map((order) => (
             <tr key={order.order_id}>
-              <td>{order.order_id}</td>
-              <td>{order.user_id}</td>
-              <td>{order.restaurant_id}</td>
-              <td>{order.order_date}</td>
-              <td>{order.total_price}</td>
-              <td>{order.payment_status ? 'Paid' : 'Unpaid'}</td>
+              <td className="gaegu">{order.order_id}</td>
+              <td className="gaegu">{order.restaurant_id}</td>
+              <td className="gaegu">{order.order_date}</td>
+              <td className="gaegu">{order.total_price}</td>
+              <td className="gaegu">{order.payment_status ? 'Paid' : 'Unpaid'}</td>
               <td>{order.delivery_status}</td>
             </tr>
           ))}

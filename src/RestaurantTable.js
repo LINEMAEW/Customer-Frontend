@@ -8,13 +8,13 @@ const RestaurantTable = ({ all_restaurants }) => {
     <table>
       <thead>
         <tr>
-          <th>Restaurant Name</th>
-          <th>Description</th>
+          <th className="bar-col">Restaurant Name</th>
+          <th className="bar-col">Description</th>
         </tr>
       </thead>
       <tbody>
         {all_restaurants.map(restaurant => (
-          <tr key={restaurant.restaurant_name}>
+          <tr  key={restaurant.restaurant_name}>
             <td>
               <a style={{color: "blue", textDecoration: 'underline'}} onClick={()=>{window.location.href = "/menu"}}>{restaurant.restaurant_name}</a>
             </td>
