@@ -1,0 +1,73 @@
+.login-sign-cus {
+    background-color: #b6c471;
+    display: flex;
+}
+
+.head-cus, .cus-login, .cus-signUp {
+    font-family: 'Lilita One', cursive;
+}
+
+.btn-cus-log, .btn-cus-sign {
+    font-family: 'Gaegu', cursive;
+}
+
+.cus-login {
+    margin: 2cm;
+    margin-left: -3cm;
+    font-size: 30px;
+}
+
+.cus-signUp {
+    margin: 2cm;
+    margin-left: 2cm;
+    font-size: 30px;
+}
+
+.head-cus {
+    font-size: 52px;
+    margin-left: 1cm;
+}
+
+.e-log-cus, .p-log-pass {
+    display: flex;
+    font-size: 30px;
+}
+
+.p-log-cus , .p-log-sign {
+    font-size: 52px;
+    padding-left: 4cm;
+}
+.in-sub-cus-log, .in-sub-cus-pass {
+    border-radius: 2cm;
+    width: 8cm;
+    height: 1cm;
+    margin-top: 0.7cm;
+    margin-left: 0.5cm;
+    border-color: #fcf6db;
+    background-color: #fcf6db;
+}
+
+.btn-cus-log, .btn-cus-sign {
+    color: red;
+    font-size: 25px;
+    border-radius: 2cm;
+    width: 3cm;
+    height: 1.5cm;
+    border-color: #ffcc00;
+    background-color: #ffcc00;
+    margin-left: 5cm;
+}
+
+.u-sign-cus, .e-sign-cus, .p-sign-cus, .ph-sign-cus, .ad-sign-cus {
+    display: flex;
+}
+
+.in-sign-res {
+    border-radius: 2cm;
+    width: 8cm;
+    height: 1cm;
+    margin-top: 0.7cm;
+    margin-left: 0.5cm;
+    border-color: #fcf6db;
+    background-color: #fcf6db;
+}
