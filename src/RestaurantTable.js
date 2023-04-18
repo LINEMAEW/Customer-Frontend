@@ -3,6 +3,7 @@ import MenuTable from './MenuTable';
 import { Link } from "react-router-dom";
 
 const RestaurantTable = ({ all_restaurants }) => {
+
   return (
     <table>
       <thead>
@@ -15,7 +16,7 @@ const RestaurantTable = ({ all_restaurants }) => {
         {all_restaurants.map(restaurant => (
           <tr key={restaurant.restaurant_name}>
             <td>
-              <a onClick={()=>{window.location.href = "/menu"}}>{restaurant.restaurant_name}</a>
+              <a style={{color: "blue", textDecoration: 'underline'}} onClick={()=>{window.location.href = "/menu"}}>{restaurant.restaurant_name}</a>
             </td>
             <td>{restaurant.description}</td>
           </tr>
